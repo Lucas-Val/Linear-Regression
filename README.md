@@ -39,18 +39,3 @@ This project explores relationships between advertising spend and product sales,
 
 * **Advertising**: TV advertising is the strongest single predictor of Sales, explaining \~61% of the variation.
 * **Automobiles**: Vehicle weight is a strong predictor of fuel efficiency (MPG), explaining \~69% of the variation.
-
-## Requirements
-
-* R (≥ 4.0.0)
-* Packages: `ISLR`
-
-## How to Run
-
-1. Clone this repository.
-2. Place `Advertising.csv` in the project directory.
-3. Run the R script to reproduce analysis and plots.
-
----
-
-Want me to also **add a "Project Structure" section** (e.g., `/data`, `/scripts`, `/outputs`) so it looks even more like a polished GitHub repo?
