@@ -11,16 +11,13 @@ head(adv)
 # Sales and TV
 attach(adv)
 plot(Sales ~ TV, xlab = "TV", ylab = "Sales",
-     main = "Sales vs TV"
-     )
+     main = "Sales vs TV")
 # Sales and Radio
 plot(Sales ~ Radio, xlab = "Radio", ylab = "Sales",
-     main = "Sales vs Radio"
-     )
+     main = "Sales vs Radio")
 # Sales and Newspaper
 plot(Sales ~ Newspaper, xlab = "Newspaper", ylab = "Sales",
-     main = "Sales vs Newspaper"
-     )
+     main = "Sales vs Newspaper")
 # Finding the correlation coefficient of Sales and TV
 cor(Sales, TV)
 # Correlation coefficient (r) = 0.7822244
@@ -51,8 +48,7 @@ confint(model1)
 
 #Plotting the regression line to the model
 plot(Sales ~ TV, xlab = "TV", ylab = "Sales",
-     main = "Sales vs TV"
-     )
+     main = "Sales vs TV")
 abline(a = 7.032594 , b = 0.047537 , col = "red")
 # The red line shows the predicted sales from our regression model
 # Positive linear trend: as TV advertising spend increases, sales increase
@@ -88,24 +84,21 @@ plot(Auto$displacement, Auto$mpg,
      main = "MPG vs Displacement",
      xlab = "Displacement",
      ylab = "MPG",
-     pch = 19, col = "blue"
-     )
+     pch = 19, col = "blue")
 
 # mpg vs weight
 plot(Auto$weight, Auto$mpg,
      main = "MPG vs Weight",
      xlab = "Weight",
      ylab = "MPG",
-     pch = 19, col = "red"
-     )
+     pch = 19, col = "red")
 
 # mpg vs acceleration
 plot(Auto$acceleration, Auto$mpg,
      main = "MPG vs Acceleration",
      xlab = "Acceleration",
      ylab = "MPG",
-     pch = 19, col = "green"
-     )
+     pch = 19, col = "green")
 
 cor(Auto$mpg, Auto$weight)
 fit_auto <- lm(mpg ~ weight, data = Auto)
