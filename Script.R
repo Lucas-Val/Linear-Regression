@@ -1,5 +1,6 @@
 # Loading the data 
 adv = read.csv("Advertising.csv")
+
 # Exploring the data
 dim(adv)
 names(adv)
@@ -7,17 +8,21 @@ sapply(adv, class)
 str (adv)
 class(adv)
 head(adv)
-# Constructing scatter plots to see relationships of:
-# Sales and TV
+
+# Constructing scatter plots to see relationships of
+# sales and TV
 attach(adv)
 plot(Sales ~ TV, xlab = "TV", ylab = "Sales",
      main = "Sales vs TV")
+
 # Sales and Radio
 plot(Sales ~ Radio, xlab = "Radio", ylab = "Sales",
      main = "Sales vs Radio")
+
 # Sales and Newspaper
 plot(Sales ~ Newspaper, xlab = "Newspaper", ylab = "Sales",
      main = "Sales vs Newspaper")
+
 # Finding the correlation coefficient of Sales and TV
 cor(Sales, TV)
 # Correlation coefficient (r) = 0.7822244
